@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 6 · Financial Mathematics A: Earning, Saving and Spending Money</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="nav-c">
+<header class="site-header">
+  <a class="site-title" href="index.html">Financial Mathematics A: Earning, Saving and Spending Money</a>
+  <span class="site-sub">Stage 5 · Year 10 · Unit of Work</span>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+</header>
+<div class="layout">
+<nav id="site-nav" class="site-nav" aria-label="Unit pages"><ul>
+<li class="toggle"><button class="nav-collapse" type="button" aria-expanded="true" title="Hide the menu"><span class="when-open">‹ Hide menu</span><span class="when-closed">›</span></button></li>
+<li class="sec" aria-hidden="true">Unit overview</li>
+<li><a class="unit" href="index.html" title="Home"><span class="s">Home</span><span class="t">Home</span></a></li>
+<li><a class="unit" href="plan.html" title="Unit plan and overview"><span class="s">Unit plan</span><span class="t">Unit plan and overview</span></a></li>
+<li><a class="unit" href="rationale.html" title="Rationale"><span class="s">Rationale</span><span class="t">Rationale</span></a></li>
+<li><a class="unit" href="syllabus.html" title="Syllabus outcomes"><span class="s">Syllabus</span><span class="t">Syllabus outcomes</span></a></li>
+<li><a class="unit" href="prior-learning.html" title="Prior learning and misconceptions"><span class="s">Prior learning</span><span class="t">Prior learning and misconceptions</span></a></li>
+<li class="sec" aria-hidden="true">Lessons</li>
+<li class="grp earn" aria-hidden="true">Earning money</li>
+<li><a class="lesson earn" href="lesson-1.html" title="Ways of earning money"><span class="n">1</span><span class="t">Ways of earning money</span></a></li>
+<li><a class="lesson earn" href="lesson-2.html" title="Overtime and penalty rates"><span class="n">2</span><span class="t">Overtime and penalty rates</span></a></li>
+<li><a class="lesson earn" href="lesson-3.html" title="Gross to take-home pay"><span class="n">3</span><span class="t">Gross to take-home pay</span></a></li>
+<li class="grp grow" aria-hidden="true">Simple interest</li>
+<li><a class="lesson grow" href="lesson-4.html" title="The simple interest formula"><span class="n">4</span><span class="t">The simple interest formula</span></a></li>
+<li><a class="lesson grow" href="lesson-5.html" title="Applying simple interest"><span class="n">5</span><span class="t">Applying simple interest</span></a></li>
+<li><a class="lesson grow" href="lesson-6.html" aria-current="page" title="Comparing interest options"><span class="n">6</span><span class="t">Comparing interest options</span></a></li>
+<li class="grp spend" aria-hidden="true">Spending money</li>
+<li><a class="lesson spend" href="lesson-7.html" title="Paying over time"><span class="n">7</span><span class="t">Paying over time</span></a></li>
+<li><a class="lesson spend" href="lesson-8.html" title="Buy now, pay later"><span class="n">8</span><span class="t">Buy now, pay later</span></a></li>
+<li><a class="lesson spend" href="lesson-9.html" title="Short-term loans"><span class="n">9</span><span class="t">Short-term loans</span></a></li>
+<li class="grp earn" aria-hidden="true">Outline only</li>
+<li><a class="lesson earn" href="further-lessons.html" title="Taxable income"><span class="n">3b</span><span class="t">Taxable income</span></a></li>
+</ul></nav>
+<main class="content">
+<p class="draft-note">Placeholder page</p>
+<h1>Lesson 6: Comparing Simple Interest Options</h1><p class="placeholder">This lesson will be added when the Simple interest lessons are submitted. The title comes from the group's unit plan.</p>
+</main>
+</div>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function () {
+  var n = document.getElementById('site-nav');
+  var open = n.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+});
+(function () {
+  var b = document.querySelector('.nav-collapse');
+  function set(closed) {
+    document.body.classList.toggle('nav-collapsed', closed);
+    b.setAttribute('aria-expanded', !closed);
+    b.title = closed ? 'Show the menu' : 'Hide the menu';
+  }
+  var saved = false;
+  try { saved = localStorage.getItem('navCollapsed') === '1'; } catch (e) {}
+  set(saved);
+  b.addEventListener('click', function () {
+    var closed = !document.body.classList.contains('nav-collapsed');
+    set(closed);
+    try { localStorage.setItem('navCollapsed', closed ? '1' : '0'); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
