@@ -43,7 +43,7 @@
 □ I can calculate total repaid and borrowing cost without double counting.<br />
 □ I can compare equal borrowing amounts and identify schedule constraints.<br />
 □ I can justify a decision with calculations and acknowledge missing information.</p></td></tr><tr><td class=""><p class="lp-label">Syllabus outcomes and content:</p><p>MA5-FIN-C-01; MAO-WM-01. Relevant content (paraphrased): Investigate small short-term loans and compare their borrowing costs; consolidate purchase-plan and BNPL calculations.</p></td><td class=""><p class="lp-label">Working Mathematically indicators:</p><p><em>Select an appropriate fee model; distinguish principal from borrowing cost; compare like amounts and explain a duration-dependent result.</em></p></td></tr><tr><td class=""><p class="lp-label">ICT:</p><p>Build a comparison model and change loan duration while holding principal and fee basis constant. Check outputs against hand arithmetic and interpret the crossover.</p></td><td class=""><p class="lp-label">LIT:</p><p>Read “original amount borrowed”, “per month” and “in addition”; explain “Total repaid is __; borrowing cost is __”.</p></td></tr><tr><td class=""><p class="lp-label">Prerequisite knowledge:</p><p>Lessons 7–8 total-cost comparisons and conditional charges; percentages; basic spreadsheet formulas. No reducing-balance or compound-interest calculation is assumed.</p></td><td class=""><p class="lp-label">Resources:</p><p>Tasks 9A–9F; calculators; spreadsheet devices/paper fallback; mini-whiteboards; individual assessment sheet and marking guide.</p></td></tr></table><div class="lp-key"><p><b>Labels used in this plan:</b> <span class="tag tag-wm">WM</span> Working Mathematically <span class="tag tag-lit">LIT</span> Literacy <span class="tag tag-ict">ICT</span> Technology <span class="tag tag-afl">AfL</span> Assessment for learning <span class="tag tag-aol">AoL</span> Assessment of learning</p><p><mark><b>Key teacher question</b></mark> → <b>Expected:</b> suggested student response. Self-designed WM indicators are in <em>italics</em>.</p></div><h2 id="teaching-sequence">Teaching sequence</h2>
-<div class="table-wrap"><table>
+<div class="table-wrap"><table class="seq">
 
 <thead>
 <tr>
@@ -228,9 +228,16 @@ Contingency: Shorten the preceding discussion to preserve 12-minute assessment.<
 </div>
 <script>
 document.querySelector('.nav-toggle').addEventListener('click', function () {
+  // phones: the menu opens just under the fixed top bar, wherever the page is scrolled to
   var n = document.getElementById('site-nav');
   var open = n.classList.toggle('open');
   this.setAttribute('aria-expanded', open);
+  this.textContent = open ? 'Close' : 'Menu';
+  if (open) {
+    var h = document.querySelector('.site-header').getBoundingClientRect().bottom;
+    n.style.top = h + 'px';
+    n.style.maxHeight = (window.innerHeight - h) + 'px';
+  }
 });
 (function () {
   var b = document.querySelector('.nav-collapse');
@@ -241,9 +248,13 @@ document.querySelector('.nav-toggle').addEventListener('click', function () {
   }
   var saved = false;
   try { saved = localStorage.getItem('navCollapsed') === '1'; } catch (e) {}
-  set(saved);
+  // the collapsed sidebar is a desktop feature; phones always get the full menu
+  var phone = window.matchMedia('(max-width: 860px)');
+  set(saved && !phone.matches);
+  phone.addEventListener('change', function () { set(saved && !phone.matches); });
   b.addEventListener('click', function () {
     var closed = !document.body.classList.contains('nav-collapsed');
+    saved = closed;
     set(closed);
     try { localStorage.setItem('navCollapsed', closed ? '1' : '0'); } catch (e) {}
   });

@@ -43,7 +43,7 @@
 □ I can calculate total paid and additional cost above the cash price.<br />
 □ I can justify a comparison using complete totals.<br />
 □ I can distinguish fitting stated payment limits from genuine affordability.</p></td></tr><tr><td class=""><p class="lp-label">Syllabus outcomes and content:</p><p>MA5-FIN-C-01; MAO-WM-01. Relevant content (paraphrased): Calculate purchase costs when an initial deposit is followed by regular repayments.</p></td><td class=""><p class="lp-label">Working Mathematically indicators:</p><p><em>Organise deposits and repeated payments; justify unequal-duration comparisons; identify limits of a conclusion based on incomplete information.</em></p></td></tr><tr><td class=""><p class="lp-label">ICT:</p><p>Calculator use supports arithmetic only.</p></td><td class=""><p class="lp-label">LIT:</p><p>Explicit financial vocabulary; annotate offer terms; “Plan __ costs $__ in total, compared with $__; therefore …”; silent writing and partner rehearsal before sharing.</p></td></tr><tr><td class=""><p class="lp-label">Prerequisite knowledge:</p><p>Percentages of amounts; addition and multiplication of money; 12 months in a year; calculator use. Students have studied earning money and simple interest in the proposed sequence, but this lesson does not require a loan-interest formula.</p></td><td class=""><p class="lp-label">Resources:</p><p>Calculators; mini-whiteboards/A–D cards; board; printed Tasks 7A–7F below; labelled calculation rows; payment timeline; observation checklist; exit ticket.</p></td></tr></table><div class="lp-key"><p><b>Labels used in this plan:</b> <span class="tag tag-wm">WM</span> Working Mathematically <span class="tag tag-lit">LIT</span> Literacy <span class="tag tag-ict">ICT</span> Technology <span class="tag tag-afl">AfL</span> Assessment for learning <span class="tag tag-aol">AoL</span> Assessment of learning</p><p><mark><b>Key teacher question</b></mark> → <b>Expected:</b> suggested student response. Self-designed WM indicators are in <em>italics</em>.</p></div><h2 id="teaching-sequence">Teaching sequence</h2>
-<div class="table-wrap"><table>
+<div class="table-wrap"><table class="seq">
 
 <thead>
 <tr>
@@ -223,9 +223,16 @@ Contingency: Shorten public sharing if needed; retain independent exit evidence.
 </div>
 <script>
 document.querySelector('.nav-toggle').addEventListener('click', function () {
+  // phones: the menu opens just under the fixed top bar, wherever the page is scrolled to
   var n = document.getElementById('site-nav');
   var open = n.classList.toggle('open');
   this.setAttribute('aria-expanded', open);
+  this.textContent = open ? 'Close' : 'Menu';
+  if (open) {
+    var h = document.querySelector('.site-header').getBoundingClientRect().bottom;
+    n.style.top = h + 'px';
+    n.style.maxHeight = (window.innerHeight - h) + 'px';
+  }
 });
 (function () {
   var b = document.querySelector('.nav-collapse');
@@ -236,9 +243,13 @@ document.querySelector('.nav-toggle').addEventListener('click', function () {
   }
   var saved = false;
   try { saved = localStorage.getItem('navCollapsed') === '1'; } catch (e) {}
-  set(saved);
+  // the collapsed sidebar is a desktop feature; phones always get the full menu
+  var phone = window.matchMedia('(max-width: 860px)');
+  set(saved && !phone.matches);
+  phone.addEventListener('change', function () { set(saved && !phone.matches); });
   b.addEventListener('click', function () {
     var closed = !document.body.classList.contains('nav-collapsed');
+    saved = closed;
     set(closed);
     try { localStorage.setItem('navCollapsed', closed ? '1' : '0'); } catch (e) {}
   });
