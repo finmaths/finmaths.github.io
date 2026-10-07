@@ -235,7 +235,8 @@ a.mm-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,.12); }
 .mm-key .w { color: #B8312F; font-style: italic; }
 
 /* content-sized table columns, quiet pending notes */
-td.nw, th.nw { white-space: nowrap; width: 1%; }
+td.nw, th.nw, td.nwd, th.nwd { white-space: nowrap; width: 1%; }
+.keep { white-space: nowrap; }
 table.syl td.nw, table.syl th.nw { width: 8.5rem; }
 .glance { border-left: 4px solid var(--navy); background: var(--wash); padding: .6rem 1rem; margin: 1rem 0 1.6rem; border-radius: 4px; }
 .glance p { margin: .2rem 0 .4rem; }
@@ -275,6 +276,7 @@ main.content h3 + h4:not(.mm-card h4) { margin-top: 12px; }
   .content { margin: 12px 0 24px; padding: 20px 16px 32px; border-radius: 0; border-left: 0; border-right: 0; }
   h1 { font-size: 1.5rem; }
   td img { width: 120px; max-width: 120px; }
+  td.nwd, th.nwd { white-space: normal; width: auto; }   /* longer short columns may wrap on a phone */
   .fig-row { flex-direction: column; align-items: stretch; }
   .fig-row > p:has(img[src$=".png"]) { flex-basis: auto; max-width: 300px; }
   table.seq, table.seq > tbody, table.seq > tbody > tr, table.seq > tbody > tr > td { display: block; width: 100%; }
