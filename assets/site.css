@@ -328,3 +328,12 @@ h3.part { padding-left: 10px; border-left: 5px solid currentColor; }
 .gp-chips a { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 0.86rem; line-height: 1.35;
   color: var(--ink); text-decoration: none; background: color-mix(in srgb, var(--c) 10%, white); border: 1px solid color-mix(in srgb, var(--c) 35%, white); }
 .gp-chips a:hover { background: color-mix(in srgb, var(--c) 20%, white); }
+
+/* who prepared what */
+.byline { color: var(--muted); margin: -10px 0 18px; font-size: 0.95rem; }
+.team { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 8px 0 6px; }
+@container (max-width: 640px) { .team { grid-template-columns: 1fr; } }
+.tm { background: var(--paper); border: 1px solid var(--line); border-top: 4px solid var(--c); border-radius: 8px; padding: 10px 14px; }
+.tm strong { display: block; color: var(--c); font-size: 1.02rem; }
+.tm span { color: var(--ink); font-size: 0.9rem; }
+.team-note { color: var(--muted); font-size: 0.88rem; margin: 6px 0 20px; }
