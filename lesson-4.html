@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lesson 4 · Financial Mathematics A: Earning, Saving and Spending Money</title>
-<link rel="stylesheet" href="assets/site.css?v=6ee52930">
+<title>Lesson 4: Developing the Simple Interest Formula · Financial Mathematics A: Earning, Saving and Spending Money</title>
+<link rel="stylesheet" href="assets/site.css?v=f2c79a0f">
 </head>
 <body class="nav-c">
 <header class="site-header">
@@ -29,7 +29,7 @@
 <li class="grp grow" aria-hidden="true">Simple interest</li>
 <li><a class="lesson grow" href="lesson-4.html" aria-current="page" title="The simple interest formula"><span class="n">4</span><span class="t">The simple interest formula</span></a></li>
 <li><a class="lesson grow" href="lesson-5.html" title="Applying simple interest"><span class="n">5</span><span class="t">Applying simple interest</span></a></li>
-<li><a class="lesson grow" href="lesson-6.html" title="Comparing interest options"><span class="n">6</span><span class="t">Comparing interest options</span></a></li>
+<li><a class="lesson grow" href="lesson-6.html" title="Tables and graphs"><span class="n">6</span><span class="t">Tables and graphs</span></a></li>
 <li class="grp spend" aria-hidden="true">Spending money</li>
 <li><a class="lesson spend" href="lesson-7.html" title="Paying over time"><span class="n">7</span><span class="t">Paying over time</span></a></li>
 <li><a class="lesson spend" href="lesson-8.html" title="Buy now, pay later"><span class="n">8</span><span class="t">Buy now, pay later</span></a></li>
@@ -38,8 +38,337 @@
 <li><a class="lesson earn" href="further-lessons.html" title="Taxable income"><span class="n">3b</span><span class="t">Taxable income</span></a></li>
 </ul></nav>
 <main class="content">
-<p class="draft-note">Placeholder page</p>
-<h1>Lesson 4: Developing the Simple Interest Formula</h1><p class="byline">Prepared by Yueyi Wang</p><p class="placeholder">This lesson will be added when the Simple interest lessons are submitted. The title comes from the group's unit plan.</p>
+
+<h1 id="lesson-4-developing-the-simple-interest-formula">Lesson 4: Developing the Simple Interest Formula</h1><p class="byline">Prepared by Yueyi Wang</p><table class="lp-head"><tr><td colspan="2"><div class="lp-first"><span><b>Year level:</b> Year 10 (middle ability set)</span><span><b>Duration:</b> 60 minutes</span><span><b>Focal concept/topic:</b> Simple interest: original principal, constant growth, annual rates and time units</span></div></td></tr><tr><td colspan="2"><p class="lp-label">Lesson aim:</p><p>Build I = Prn from equal yearly interest, then use the formula for whole years and months. Students distinguish the interest earned from the total amount and explain errors in the choice of rate, time and calculation base.</p></td></tr><tr><td colspan="2" class="lp-light"><p class="lp-label">Learning intention:</p><p>We are learning to explain how simple interest grows, establish I = Prn, and calculate interest and total amount for a stated saving period.</p><p class="lp-label">Success criteria:</p><p>□ I can explain why simple interest is calculated on the original principal each year.<br />
+□ I can identify P, r and n, write an annual percentage rate as a decimal and convert months to years.<br />
+□ I can calculate I and A = P + I and explain the difference between them.<br />
+□ I can identify and correct an error in a simple-interest calculation.</p></td></tr><tr><td class=""><p class="lp-label">Syllabus outcomes and content:</p><p>NSW Mathematics K–10 Syllabus (NESA, 2022a).</p><ul>
+<li>MA5-FIN-C-01: solves financial problems involving simple interest, earning money and spending money</li>
+<li>MAO-WM-01: develops understanding and fluency in mathematics through exploring and connecting mathematical concepts, choosing and applying mathematical techniques to solve problems, and communicating their thinking and reasoning coherently and clearly</li>
+<li>Establish and use the formula I = Prn to find simple interest where I = simple interest, P = principal, r = interest rate per time period and n = number of time periods</li>
+<li>Apply the simple interest formula to solve problems related to investing money at simple interest rates, both algebraically and graphically</li>
+</ul></td><td class=""><p class="lp-label">Working Mathematically indicators:</p><p>Teacher-written indicators, linked to activities:</p><ul>
+<li><em>Generalise equal yearly increases from Ella’s table to I = Prn</em> (Build the formula).</li>
+<li><em>Choose compatible rate and time units before substituting</em> (Months and annual rates).</li>
+<li><em>Explain why the original principal remains the calculation base</em> (Build the formula, error analysis).</li>
+<li><em>Check a calculation using the annual interest and communicate a correction with reasons</em> (You do).</li>
+</ul></td></tr><tr><td class=""><p class="lp-label">ICT:</p><ul>
+<li>Teacher projects the L4 Pattern tab. Students predict the effect of doubling the principal, then check the recalculated table. The spreadsheet makes the fixed yearly increment visible; it does not replace the hand calculation.</li>
+<li>If projection fails, use the printed initial table and the P = $2000 comparison in the student pack.</li>
+</ul></td><td class=""><p class="lp-label">LIT:</p><ul>
+<li>Unpack principal, interest, amount and p.a. using a labelled money bar and the saving context (NESA, 2022b).</li>
+<li>Model reading a word problem: what is known, what must be found, and which units belong to the rate and time. Use these prompts to diagnose difficulty (NSW Department of Education, n.d.).</li>
+<li>Students complete “The interest stays the same each year because …” and explain one error using the correct term.</li>
+</ul></td></tr><tr><td class=""><p class="lp-label">Prerequisite knowledge:</p><ul>
+<li>Percentage-to-decimal conversion and finding a percentage of money, checked in Lesson 1 and used in commission and leave loading.</li>
+<li>Decimal multiplication, substitution into a rule and calculator use.</li>
+<li>12 months = 1 year. Lesson 3 has established the need to match pay periods; today the same care applies to an annual interest rate.</li>
+</ul></td><td class=""><p class="lp-label">Resources:</p><ul>
+<li>CambridgeMATHS Year 10, Section 1F, pp. 40–42 (especially Example 18(a)).</li>
+<li>Student Resources: Lesson 4 pages, formula and units card, table, You do and exit ticket.</li>
+<li>ICT Workbook: L4 Pattern tab; projector, mini-whiteboards and calculators.</li>
+<li>Assessment record with columns P/r/n, I/A, explanation and next teaching step.</li>
+</ul></td></tr><tr><td colspan="2"><p class="lp-label">Before the lesson:</p><ul>
+<li>Review the Lesson 1 percentage diagnostic and Lesson 3 exit evidence. Prepare a decimal reference strip for students who still need it.</li>
+<li>Print the Lesson 4 resource pages. Set the spreadsheet to P = 1000 and r = 5%.</li>
+<li>Keep I = Prn, A = P + I, r = percentage ÷ 100 and n = months ÷ 12 visible throughout the lesson.</li>
+<li>All saving situations are fictional. Rates stay fixed and there are no extra deposits or withdrawals. Partial years earn proportionate simple interest.</li>
+</ul></td></tr></table><div class="lp-key"><p><b>Labels used in this plan:</b> <span class="tag tag-wm">WM</span> Working Mathematically <span class="tag tag-lit">LIT</span> Literacy <span class="tag tag-ict">ICT</span> Technology <span class="tag tag-afl">AfL</span> Assessment for learning <span class="tag tag-aol">AoL</span> Assessment of learning</p><p><mark><b>Key teacher question</b></mark> → <b>Expected:</b> suggested student response. Self-designed WM indicators are in <em>italics</em>.</p></div><hr />
+<h2 id="teaching-sequence">Teaching sequence</h2>
+<div class="seq-wrap"><table class="seq"><thead><tr><th>Steps &amp; timing</th><th>Teaching &amp; learning activities</th></tr></thead><tbody><tr id="step-retrieval-and-the-saving-question"><td class="seq-phase orientation"><span class="seq-name">ORIENTATION</span><span class="seq-time">0–6 min</span><span class="seq-step">Retrieval and the saving question</span><span class="seq-tags"><span class="tag tag-afl">AfL</span><span class="tag tag-lit">LIT</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Show Ella, the barista from Lessons 1–3: “Ella has already saved $1000. A fictional account pays 5% p.a. simple interest.” Read p.a. as “per annum”, or “per year”. No wage or tax calculation is needed.</li>
+<li>Ask students to answer independently on mini-whiteboards: R1 Write 5% as a decimal. R2 Find 5% of $1000. R3 Write 6 months and 18 months as fractions of a year.</li>
+<li>Display the learning intention and success criteria. Introduce the question: How can savings grow when the percentage is always applied to the starting amount?</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> What does “5% p.a.” tell us?</p>
+<p><strong>Expected:</strong> The rate is 5% for one year. A shorter or longer period must be expressed in years.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Show all three responses at the same time. Read the saving statement and identify what 5% p.a. describes.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>If several students write 0.5, use 5/100 = 0.05 before proceeding. If months are difficult, retain the months ÷ 12 strip and revisit it in the 28–40 minute task.</p>
+</td></tr><tr id="step-build-the-formula-from-equal-increases"><td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">6–18 min</span><span class="seq-step">Build the formula from equal increases</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-ict">ICT</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Give pairs the Ella table with years 0, 1, 2 and 3. Students complete interest earned during that year, cumulative interest I, and total amount A.</li>
+<li>Model the first year: 1000 × 0.05 = $50. Circle the original $1000 as the base in every year. At year 0, “interest during that year” is recorded as $0 because no time has elapsed.</li>
+<li>Elicit total interest after n years as (1000 × 0.05) × n. Replace the particular numbers with P and r to establish I = Prn. Define every symbol and explain that r and n must refer to the same period.</li>
+<li>Project L4 Pattern. Before changing P from 1000 to 2000, students predict the annual interest and the three-year interest. Check the new table, then reset P. Change one input only.</li>
+<li>Keep the completed example beside the general formula, following worked-example and small-step guidance (Rosenshine, 2012).</li>
+</ul>
+<p><strong>Model / board working</strong></p>
+<ul>
+<li>Annual interest = 1000 × 0.05 = 50; I = 50n; A = 1000 + 50n.</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> Why is the second year’s interest still $50?</p>
+<p><strong>Expected:</strong> Simple interest is calculated on the original $1000, so 1000 × 0.05 remains $50 each year.</p>
+</blockquote>
+<blockquote class="kq"><p><strong>Key question:</strong> Which part of I = Prn is the interest earned in one year when r is an annual rate?</p>
+<p><strong>Expected:</strong> Pr. Multiplying that yearly interest by n gives the accumulated interest.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Complete the table, explain why the second year still earns $50, then write the general formula and symbol meanings.</li>
+<li>Predict $100 each year and $300 over three years when P doubles and r stays at 5%.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>Ask a student who used $1050 as the second-year base to point to the phrase “original principal”. Rebuild that row before moving to substitution.</p>
+</td></tr><tr id="step-interest-and-total-amount"><td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">18–28 min</span><span class="seq-step">Interest and total amount</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-lit">LIT</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Model M1: $1500 at 4% p.a. simple interest for 3 years. Read the question, list P/r/n, calculate I, then calculate A. Use the money bar to show what is added.</li>
+<li>We do W1: Ella’s table shows $1150 after 3 years. Students identify the interest earned and explain why $1150 cannot be I.</li>
+<li>We do W2: $2000 at 3% p.a. for 2 years. Pause after finding I and ask whether the question asks for interest or the total amount. Students calculate both, labelling each answer.</li>
+</ul>
+<p><strong>Model / board working</strong></p>
+<ul>
+<li>M1: P = 1500, r = 0.04, n = 3; I = 1500 × 0.04 × 3 = $180; A = 1500 + 180 = $1680.</li>
+<li>W2: I = 2000 × 0.03 × 2 = $120; A = $2120.</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> A student writes I = $1680 for M1. What has the student actually found?</p>
+<p><strong>Expected:</strong> The total amount A. Interest is $180, and $1500 + $180 = $1680.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Complete M1 with the teacher, then answer W1–W2. Write dollar signs and distinguish I from A.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>Use the student’s selected operation to diagnose the difficulty: reading “interest” as “amount” needs vocabulary and the bar, rather than extra multiplication practice (NESA, 2022b).</p>
+</td></tr><tr id="step-months-and-annual-rates"><td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">28–40 min</span><span class="seq-step">Months and annual rates</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-lit">LIT</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Show the labelled 12-month timeline. Model M2, adapted from Cambridge Example 18(a): $600 at 8% p.a. for 18 months (Palmer et al., 2024, p. 42). First find n = 18/12 = 1.5 years.</li>
+<li>Think aloud: “The rate is for a year, so I cannot substitute 18 as the number of years.” Complete the calculation and check against one year’s interest of $48.</li>
+<li>We do W3: convert 9, 24 and 30 months to years. We do W4: $800 at 5% p.a. for 18 months; find I and A.</li>
+<li>Give students time to rehearse the explanation with a partner before sharing it. Keep the unit card visible rather than requiring recall while the new calculation is learned (CESE, 2018).</li>
+</ul>
+<p><strong>Model / board working</strong></p>
+<ul>
+<li>M2: n = 18/12 = 1.5; I = 600 × 0.08 × 1.5 = $72; A = $672.</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> Why should the interest for 18 months be between one and two years’ interest?</p>
+<p><strong>Expected:</strong> 18 months is 1.5 years. At $48 per year, the interest must be between $48 and $96, and is $72.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Mark 18 months on the timeline, complete W3, then solve W4 using P/r/n boxes.</li>
+<li>Explain: “18 months is 1.5 years because 18 ÷ 12 = 1.5.”</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>If students write 1.8 years, ask them to locate 12 and 18 months on the timeline. A calculator error and a unit error require different feedback.</p>
+</td></tr><tr id="step-you-do-and-explain-the-error"><td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">40–54 min</span><span class="seq-step">You do and explain the error</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-lit">LIT</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Allow 8 minutes of individual work, with calculators and the reference card. Y1 $1200 at 6% p.a. for 2 years: find I and A. Y2 $900 at 4% p.a. for 30 months: find I and A.</li>
+<li>Y3 For $800 at 5% p.a. for 18 months, Omar writes I = 800 × 5 × 1.8. Correct both substitutions and calculate I. Complete the sentence “Omar’s rate/time is incorrect because …”.</li>
+<li>Y4 An account starts with $800 and ends with $860. Find the interest earned. Do not use $860 as the principal.</li>
+<li>Use the last 6 minutes to compare methods and select one anonymous error for class discussion. Require a reason as well as a corrected answer.</li>
+<li>Extension E1: Compare $1000 at 6% p.a. and $1500 at 4% p.a. What is the same about their yearly interest? What is different about their total amounts? Use Pr to explain.</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> If two savings models have the same Pr, must they have the same total amount?</p>
+<p><strong>Expected:</strong> No. They earn the same interest per year, but different starting principals give different total amounts.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Solve Y1–Y4 individually. Compare Y3 with a partner and explain both corrections.</li>
+<li>Students who finish attempt E1. Students who need support use partially completed P/r/n boxes for Y1 and Y2.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>Record rate conversion (R), time conversion (T), amount/interest (A) or base (B). Use a brief read–explain–plan–calculate–state-answer conversation to find where a student is stuck (NSW Department of Education, n.d.).</p>
+</td></tr><tr id="step-review-and-exit-ticket"><td class="seq-phase synthesizing"><span class="seq-name">SYNTHESIZING</span><span class="seq-time">54–60 min</span><span class="seq-step">Review and exit ticket</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Spend 3 minutes revisiting the three checks: decimal rate, matching time units and whether the question asks for I or A. Ask students to name which check helped them today.</li>
+<li>Allow the final 3 minutes for an independent exit ticket: X1 $500 at 6% p.a. for 6 months: find I and A. X2 Explain why simple interest on the same principal remains constant each full year.</li>
+<li>Collect before displaying answers. Tell students that next lesson will use the same formula to find a missing rate or time.</li>
+</ul>
+<p><strong>Students</strong></p>
+<ul>
+<li>Complete the two-question exit ticket without partner help. Use the formula card if needed and note this on the ticket.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>Check the setup as well as the result. Use exit evidence to select the opening retrieval for Lesson 5, rather than counting correct answers only (Black &amp; Wiliam, 1998).</p>
+<p><strong>After the lesson</strong></p>
+<ul>
+<li>AfL: sort exit tickets and You do evidence using R/T/A/B. If rate or time errors are widespread, use a two-minute worked correction at the start of Lesson 5. If a small group needs it, give that group the reference strip while others begin the inverse question.</li>
+<li>Record whether each student identifies P/r/n, calculates I and A, and explains the fixed base. Keep evidence of the explanation, not only the numerical score.</li>
+<li>Retain a corrected Y3 example for retrieval in Lesson 5. The exit ticket is formative; it is not the end-of-topic judgement.</li>
+</ul>
+</td></tr></tbody></table></div><h2 id="worked-solutions">Worked solutions</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Task / question</th>
+<th>Worked solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1–R3</td>
+<td>5% = 5/100 = 0.05. 0.05 × 1000 = $50. 6 months = 6/12 = 0.5 year; 18 months = 18/12 = 1.5 years.</td>
+</tr>
+<tr>
+<td>Ella table: years 0, 1, 2, 3</td>
+<td>Interest during that year: $0, $50, $50, $50. Cumulative I: $0, $50, $100, $150. Amount A: $1000, $1050, $1100, $1150. I = 50n and A = 1000 + 50n. The original $1000 is used each year.</td>
+</tr>
+<tr>
+<td>ICT prediction: double P</td>
+<td>P = 2000, r = 0.05. Pr = $100 per year. At n = 3, I = $300 and A = $2300. Both the principal and the interest double; the annual percentage stays at 5%.</td>
+</tr>
+<tr>
+<td>M1 and W1</td>
+<td>M1: I = 1500 × 0.04 × 3 = $180; A = 1500 + 180 = $1680. W1: I = 1150 − 1000 = $150; $1150 includes the original principal and is A.</td>
+</tr>
+<tr>
+<td>W2</td>
+<td>P = 2000, r = 0.03, n = 2. I = 2000 × 0.03 × 2 = $120; A = $2120.</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>n = 18/12 = 1.5. I = 600 × 0.08 × 1.5 = $72; A = 600 + 72 = $672. One year earns $48, so 1.5 years earns $72.</td>
+</tr>
+<tr>
+<td>W3 and W4</td>
+<td>9/12 = 0.75 year; 24/12 = 2 years; 30/12 = 2.5 years. W4: I = 800 × 0.05 × 1.5 = $60; A = $860.</td>
+</tr>
+<tr>
+<td>Y1 and Y2</td>
+<td>Y1: I = 1200 × 0.06 × 2 = $144; A = $1344. Y2: n = 30/12 = 2.5; I = 900 × 0.04 × 2.5 = $90; A = $990.</td>
+</tr>
+<tr>
+<td>Y3 and Y4</td>
+<td>Y3: 5% = 0.05, and 18 months = 1.5 years. I = 800 × 0.05 × 1.5 = $60. Omar used 5 rather than 5/100, and divided months by 10 rather than 12. Y4: I = A − P = 860 − 800 = $60.</td>
+</tr>
+<tr>
+<td>E1</td>
+<td>1000 × 0.06 = 60 and 1500 × 0.04 = 60. Both earn $60 per year, so I = 60n for both. Their amount rules are A = 1000 + 60n and A = 1500 + 60n; the second is always $500 larger for the same n.</td>
+</tr>
+<tr>
+<td>Exit X1–X2</td>
+<td>X1: n = 6/12 = 0.5, I = 500 × 0.06 × 0.5 = $15; A = $515. X2: the principal and rate stay fixed, so Pr is the same each year. Accept an equivalent explanation that names the original principal.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="adjustments-and-anticipated-misconceptions">Adjustments and anticipated misconceptions</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Anticipated misconception</th>
+<th>Why students may think this</th>
+<th>How this lesson addresses it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5% is entered as 5 or 0.5.</td>
+<td>Students may remember a percentage as a whole number or move the decimal one place.</td>
+<td>R1 and the rate strip make the division by 100 explicit. Ask students to check that 5% of $1000 is $50.</td>
+</tr>
+<tr>
+<td>18 months is entered as 18 or 1.8 years.</td>
+<td>Decimal notation can be confused with a year-and-month label.</td>
+<td>Use the 12-month timeline, n = months/12 and an estimate between one and two years.</td>
+</tr>
+<tr>
+<td>The new balance becomes the next year’s base.</td>
+<td>Everyday “growth” language can suggest that all money in the account earns interest.</td>
+<td>Circle the original principal in each table row and explain why the annual interest remains $50.</td>
+</tr>
+<tr>
+<td>Interest and total amount are interchangeable.</td>
+<td>Both are amounts of money, and “how much” is ambiguous without reading the noun.</td>
+<td>Use the labelled P + I = A bar. Students label both answers and subtract P when A is given.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Adjustments</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th class="nwd">Students who need…</th>
+<th>Adjustment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nwd">More support</td>
+<td>Keep the formula and units card visible. Use P/r/n boxes with r = 0.05 already shown for the first independent question. Read a question aloud, then ask the student to state what must be found. Allow extra processing time before asking for an explanation.</td>
+</tr>
+<tr>
+<td class="nwd">More challenge</td>
+<td>E1 asks students to explain equal annual interest with different principals and rates. Require rules for A and a reason, rather than simply adding more calculations.</td>
+</tr>
+<tr>
+<td class="nwd">Language / EAL/D</td>
+<td>Use a labelled bar and timeline with the word bank. Allow students to rehearse in a home language or with a partner. Provide “The annual interest is … because …” and “This answer is interest/amount because …” <span class="keep">(NESA, 2022b)</span>.</td>
+</tr>
+<tr>
+<td class="nwd">Access and participation</td>
+<td>Provide printed tables and large, high-contrast diagrams. Students may explain orally while the teacher records the reasoning. Use a fictional saver and avoid asking students to disclose family income or savings.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="vocabulary">Vocabulary</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th class="nwd">Term</th>
+<th>Definition</th>
+<th>Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nwd">Principal <span class="keep">(P)</span></td>
+<td>The original amount invested. For Ella, P = $1000.</td>
+<td><a href="#fig-si-money-bar">Money bar / timeline below</a></td>
+</tr>
+<tr>
+<td class="nwd">Simple interest <span class="keep">(I)</span></td>
+<td>Interest calculated on the original principal for the whole stated period.</td>
+<td><a href="#fig-si-money-bar">Money bar / timeline below</a></td>
+</tr>
+<tr>
+<td class="nwd">Interest rate <span class="keep">(r)</span></td>
+<td>Interest per period as a proportion of the principal. 5% p.a. is r = 0.05 per year.</td>
+<td><a href="#fig-si-money-bar">Money bar / timeline below</a></td>
+</tr>
+<tr>
+<td class="nwd">Per annum <span class="keep">(p.a.)</span></td>
+<td>Per year. Match n to years when the rate is annual.</td>
+<td><a href="#fig-si-money-bar">Money bar / timeline below</a></td>
+</tr>
+<tr>
+<td class="nwd">Time <span class="keep">(n)</span></td>
+<td>The number of periods for the quoted rate. With an annual rate, 18 months is n = 1.5 years.</td>
+<td><a href="#fig-si-money-bar">Money bar / timeline below</a></td>
+</tr>
+<tr>
+<td class="nwd">Total amount <span class="keep">(A)</span></td>
+<td>The principal plus accumulated interest: A = P + I.</td>
+<td><a href="#fig-si-money-bar">Money bar / timeline below</a></td>
+</tr>
+</tbody>
+</table></div>
+<div class="fig-row"><p><img id="fig-si-money-bar" src="assets/img/si-money-bar.png" alt="Money bar: principal P $1000 plus interest I $150 makes the total amount A = P + I = $1150" /></p>
+<p><img id="fig-si-timeline" src="assets/img/si-timeline.png" alt="Timeline from 0 to 24 months, with 18 months marked as 18 ÷ 12 = 1.5 years" /></p></div>
+<p><em>Visual: prepared for these lessons. It connects the words to quantities, units or a mathematical operation.</em></p>
+<h2 id="sources-acknowledged-in-this-lesson">Sources acknowledged in this lesson</h2>
+<p>The 18-month worked example is adapted from Palmer et al. (2024), Example 18(a), p. 42. Ella’s saving situation, other questions, diagrams, worksheet and spreadsheet are prepared for these lessons. The recurring character and page structure follow the group’s Lessons 1–3.</p>
+<ul>
+<li>Black, P., &amp; Wiliam, D. (1998). Assessment and classroom learning. <em>Assessment in Education: Principles, Policy &amp; Practice, 5</em>(1), 7–74. <a href="https://doi.org/10.1080/0969595980050102">https://doi.org/10.1080/0969595980050102</a></li>
+<li>Centre for Education Statistics and Evaluation. (2018). <em>Cognitive load theory in practice: Examples for the classroom</em>. NSW Department of Education. <a href="https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/practical-guides-for-educators/cognitive-load-theory-in-practice.html">https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/practical-guides-for-educators/cognitive-load-theory-in-practice.html</a></li>
+<li>NSW Department of Education. (n.d.). <em>Newman's error analysis</em>. Digital Learning Selector. <a href="https://app.education.nsw.gov.au/digital-learning-selector/LearningActivity/Card/650">https://app.education.nsw.gov.au/digital-learning-selector/LearningActivity/Card/650</a></li>
+<li>NSW Education Standards Authority. (2022a). <em>Mathematics K–10 syllabus</em>. <a href="https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-k-10-2022/content/stage-5/facb3aa952">https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-k-10-2022/content/stage-5/facb3aa952</a></li>
+<li>NSW Education Standards Authority. (2022b). <em>Vocabulary and language in Mathematics 7–10</em> [Support material]. <a href="https://curriculum.nsw.edu.au/file/0e513738-cc88-4ff1-9984-ef0b842faf18/mathematics-7-10-supporting-language-and-vocabulary.docx">https://curriculum.nsw.edu.au/file/0e513738-cc88-4ff1-9984-ef0b842faf18/mathematics-7-10-supporting-language-and-vocabulary.docx</a></li>
+<li>Palmer, S., McDaid, K., Greenwood, D., Woolley, S., Goodman, J., &amp; Vaughan, J. (2024). <em>CambridgeMATHS NSW Stage 5 – Core and Standard Paths Year 10</em> (3rd ed.). Cambridge University Press &amp; Assessment.</li>
+<li>Rosenshine, B. (2012). Principles of instruction: Research-based strategies that all teachers should know. <em>American Educator, 36</em>(1), 12–19, 39. <a href="https://www.aft.org/ae/spring2012/rosenshine">https://www.aft.org/ae/spring2012/rosenshine</a></li>
+</ul>
+
 </main>
 </div>
 <script>

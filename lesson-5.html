@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lesson 5 · Financial Mathematics A: Earning, Saving and Spending Money</title>
-<link rel="stylesheet" href="assets/site.css?v=6ee52930">
+<title>Lesson 5: Applying the Simple Interest Formula · Financial Mathematics A: Earning, Saving and Spending Money</title>
+<link rel="stylesheet" href="assets/site.css?v=f2c79a0f">
 </head>
 <body class="nav-c">
 <header class="site-header">
@@ -29,7 +29,7 @@
 <li class="grp grow" aria-hidden="true">Simple interest</li>
 <li><a class="lesson grow" href="lesson-4.html" title="The simple interest formula"><span class="n">4</span><span class="t">The simple interest formula</span></a></li>
 <li><a class="lesson grow" href="lesson-5.html" aria-current="page" title="Applying simple interest"><span class="n">5</span><span class="t">Applying simple interest</span></a></li>
-<li><a class="lesson grow" href="lesson-6.html" title="Comparing interest options"><span class="n">6</span><span class="t">Comparing interest options</span></a></li>
+<li><a class="lesson grow" href="lesson-6.html" title="Tables and graphs"><span class="n">6</span><span class="t">Tables and graphs</span></a></li>
 <li class="grp spend" aria-hidden="true">Spending money</li>
 <li><a class="lesson spend" href="lesson-7.html" title="Paying over time"><span class="n">7</span><span class="t">Paying over time</span></a></li>
 <li><a class="lesson spend" href="lesson-8.html" title="Buy now, pay later"><span class="n">8</span><span class="t">Buy now, pay later</span></a></li>
@@ -38,8 +38,337 @@
 <li><a class="lesson earn" href="further-lessons.html" title="Taxable income"><span class="n">3b</span><span class="t">Taxable income</span></a></li>
 </ul></nav>
 <main class="content">
-<p class="draft-note">Placeholder page</p>
-<h1>Lesson 5: Applying the Simple Interest Formula</h1><p class="byline">Prepared by Yueyi Wang</p><p class="placeholder">This lesson will be added when the Simple interest lessons are submitted. The title comes from the group's unit plan.</p>
+
+<h1 id="lesson-5-applying-the-simple-interest-formula">Lesson 5: Applying the Simple Interest Formula</h1><p class="byline">Prepared by Yueyi Wang</p><table class="lp-head"><tr><td colspan="2"><div class="lp-first"><span><b>Year level:</b> Year 10 (middle ability set)</span><span><b>Duration:</b> 60 minutes</span><span><b>Focal concept/topic:</b> Missing rate and time; substitution, inverse operations and a first amount graph</span></div></td></tr><tr><td colspan="2"><p class="lp-label">Lesson aim:</p><p>Use I = Prn when rate or time is unknown, verify a result by substitution, and represent one familiar simple-interest amount rule in a table and graph. Finding principal is a supported extension.</p></td></tr><tr><td colspan="2" class="lp-light"><p class="lp-label">Learning intention:</p><p>We are learning to solve simple-interest problems with an unknown rate or time, check our answers, and show a saving rule in a table and graph.</p><p class="lp-label">Success criteria:</p><p>□ I can substitute the known values and use inverse operations to find r or n.<br />
+□ I can convert a decimal rate back to a percentage and state the time unit.<br />
+□ I can check an answer by substituting it into I = Prn.<br />
+□ I can complete an amount table, plot its points on supplied axes and explain the equal increases.</p></td></tr><tr><td class=""><p class="lp-label">Syllabus outcomes and content:</p><p>NSW Mathematics K–10 Syllabus (NESA, 2022a).</p><ul>
+<li>MA5-FIN-C-01: solves financial problems involving simple interest, earning money and spending money</li>
+<li>MAO-WM-01: develops understanding and fluency in mathematics through exploring and connecting mathematical concepts, choosing and applying mathematical techniques to solve problems, and communicating their thinking and reasoning coherently and clearly</li>
+<li>Establish and use the formula I = Prn to find simple interest where I = simple interest, P = principal, r = interest rate per time period and n = number of time periods</li>
+<li>Apply the simple interest formula to solve problems related to investing money at simple interest rates, both algebraically and graphically</li>
+</ul></td><td class=""><p class="lp-label">Working Mathematically indicators:</p><p>Teacher-written indicators, linked to activities:</p><ul>
+<li><em>Choose the known quantities and an inverse operation to solve for r or n</em> (Missing rate, Missing time).</li>
+<li><em>Verify a solution and explain the units</em> (You do).</li>
+<li><em>Connect the rule A = 2000 + 120n with a table and a graph</em> (First amount graph).</li>
+<li><em>Explain why equal yearly increases produce points on a straight line</em> (First amount graph).</li>
+</ul></td></tr><tr><td class=""><p class="lp-label">ICT:</p><ul>
+<li>No new device task. Students construct the first graph on paper so the time and amount coordinates remain visible. The completed graph is retained for the Lesson 6 spreadsheet investigation.</li>
+</ul></td><td class=""><p class="lp-label">LIT:</p><ul>
+<li>Read “earns interest” and “total amount” carefully before choosing I or A.</li>
+<li>Say the inverse operation aloud: “150 equals 10000 times r, so divide both sides by 10000.” Pair this explanation with the written equation.</li>
+<li>Use axis labels “Time n (years)” and “Total amount A ($)” and the sentence “Each extra year adds …, so …”.</li>
+</ul></td></tr><tr><td class=""><p class="lp-label">Prerequisite knowledge:</p><ul>
+<li>I = Prn and A = P + I, including annual rates and months ÷ 12, from Lesson 4.</li>
+<li>Solving a one-step multiplication equation and substituting to check it. This is checked explicitly in today’s retrieval.</li>
+<li>Reading a table and plotting coordinates on supplied axes. A prelabelled grid is provided, so choosing a scale is not a new demand today.</li>
+</ul></td><td class=""><p class="lp-label">Resources:</p><ul>
+<li>Student Resources: Lesson 5 pages, formula and inverse-operations card, prelabelled graph grid and exit ticket.</li>
+<li>CambridgeMATHS Year 10, Section 1F, Example 18(b), p. 42.</li>
+<li>Calculators, mini-whiteboards, rulers and Lesson 4 assessment record.</li>
+<li>Completed Lesson 5 graph for reuse in Lesson 6.</li>
+</ul></td></tr><tr><td colspan="2"><p class="lp-label">Before the lesson:</p><ul>
+<li>Select one rate or time error from Lesson 4 for the retrieval feedback. Prepare a small-group correction if needed.</li>
+<li>Print the Lesson 5 resource pages. Have a partly completed version of Y1/Y2 available for students who need it.</li>
+<li>Keep the direct formula, unit conversions and the modelled inverse equations visible. Offer the rearranged formula card as support, then ask students to explain the division.</li>
+<li>Keep the graph axes supplied and labelled. The vertical scale is $0–$2400 in $200 steps, so the initial principal is shown honestly.</li>
+</ul></td></tr></table><div class="lp-key"><p><b>Labels used in this plan:</b> <span class="tag tag-wm">WM</span> Working Mathematically <span class="tag tag-lit">LIT</span> Literacy <span class="tag tag-ict">ICT</span> Technology <span class="tag tag-afl">AfL</span> Assessment for learning <span class="tag tag-aol">AoL</span> Assessment of learning</p><p><mark><b>Key teacher question</b></mark> → <b>Expected:</b> suggested student response. Self-designed WM indicators are in <em>italics</em>.</p></div><hr />
+<h2 id="teaching-sequence">Teaching sequence</h2>
+<div class="seq-wrap"><table class="seq"><thead><tr><th>Steps &amp; timing</th><th>Teaching &amp; learning activities</th></tr></thead><tbody><tr id="step-retrieve-and-check-algebra-readiness"><td class="seq-phase orientation"><span class="seq-name">ORIENTATION</span><span class="seq-time">0–6 min</span><span class="seq-step">Retrieve and check algebra readiness</span><span class="seq-tags"><span class="tag tag-afl">AfL</span><span class="tag tag-lit">LIT</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Students answer R1: $500 at 6% p.a. for 18 months; find I and A. R2: solve 80 = 20x, then check the answer.</li>
+<li>Use one selected error from Lesson 4 to reinforce rate or time conversion. If several students cannot solve R2, model dividing both sides before beginning the missing-rate task.</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> Why is 18 months 1.5 years?</p>
+<p><strong>Expected:</strong> One year is 12 months, so 18/12 = 1.5. The rate is annual.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Answer independently, then correct the setup if necessary. Keep the units card on the desk.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>R2 separates a difficulty with inverse operations from a difficulty with the financial vocabulary. Provide a multiplication-to-division example for students who need it.</p>
+</td></tr><tr id="step-missing-rate-substitute-first"><td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">6–16 min</span><span class="seq-step">Missing rate: substitute first</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-lit">LIT</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Model M1 from Cambridge Example 18(b): a principal of $5000 earns $150 simple interest in 2 years. Find the annual rate (Palmer et al., 2024, p. 42).</li>
+<li>Write the known quantities and the unknown r. Substitute before rearranging. Show the operation applied to both sides and convert the decimal result to a percentage.</li>
+<li>We do W1: $1200 earns $72 in 2 years. Ask students to complete 72 = 2400r, solve r, state the percentage and check it.</li>
+<li>Keep a fully worked model beside a completion example. Gradually reduce the missing steps once students can explain them (Rosenshine, 2012; CESE, 2018).</li>
+</ul>
+<p><strong>Model / board working</strong></p>
+<ul>
+<li>150 = 5000 × r × 2 = 10000r; r = 150/10000 = 0.015 = 1.5% p.a.</li>
+<li>Check: 5000 × 0.015 × 2 = $150.</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> Does r = 0.015 mean 0.015% p.a.?</p>
+<p><strong>Expected:</strong> No. 0.015 × 100 = 1.5, so the rate is 1.5% p.a.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Annotate M1 and finish W1. Read 0.015 as a decimal rate and 1.5% as the same rate in percentage form.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>If students report 0.015%, ask them to multiply the decimal by 100 and check the interest produced by their stated rate.</p>
+</td></tr><tr id="step-missing-time-divide-by-annual-interest"><td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">16–26 min</span><span class="seq-step">Missing time: divide by annual interest</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Model M2: $1200 at 5% p.a. earns $180 simple interest. Find the time. Identify 1200 × 0.05 = $60 as the yearly interest before solving.</li>
+<li>We do W2: $800 at 5% p.a. earns $60. Find n in years, convert to months, and check.</li>
+<li>Ask students to explain why the operation is 180 ÷ 60 rather than 60 ÷ 180.</li>
+</ul>
+<p><strong>Model / board working</strong></p>
+<ul>
+<li>180 = 1200 × 0.05 × n = 60n; n = 180/60 = 3 years.</li>
+<li>W2: 60 = 40n; n = 1.5 years = 18 months; 800 × 0.05 × 1.5 = $60.</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> What are the units of 180 ÷ 60 here?</p>
+<p><strong>Expected:</strong> Dollars divided by dollars per year gives years. It takes 3 years to accumulate $180 at $60 per year.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Write the substituted equation, solve, then label the answer in years. Convert W2 to months.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>Keep “interest required ÷ interest per year = years” visible for students who need an arithmetic bridge to the equation.</p>
+</td></tr><tr id="step-you-do-check-and-interpret"><td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">26–38 min</span><span class="seq-step">You do, check and interpret</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-lit">LIT</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Allow 8 minutes of independent work. Y1: $2000 earns $180 in 3 years; find the annual rate and check. Y2: $1500 at 4% p.a. earns $150; find the time in years and months and check.</li>
+<li>Allow 4 minutes for paired explanations and targeted feedback. Students name the quantity they divided by and the unit in their final answer.</li>
+<li>Supported extension E1: an investment earns $216 at 6% p.a. over 18 months. Find P. Supply 216 = 0.09P if needed. E2: $2000 grows to $2240 in 2 years. Find the annual simple-interest rate. First identify I.</li>
+<li>Diagnose difficulties with read–explain–plan–calculate–state-answer prompts before supplying another example (NSW Department of Education, n.d.).</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> In E2, which amount belongs on the left of I = Prn?</p>
+<p><strong>Expected:</strong> $240, because I = A − P = 2240 − 2000. The $2240 includes the principal.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Solve Y1–Y2 with the model visible, then explain the checking substitution to a partner.</li>
+<li>Attempt E1/E2 after completing and checking the core questions.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>Use U for inverse-operation errors, R for decimal/percentage confusion, T for units and A for using A as I. Finding principal is extension evidence and is not required for the core success judgement today.</p>
+</td></tr><tr id="step-first-amount-graph-formula-to-table-to-points"><td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">38–54 min</span><span class="seq-step">First amount graph: formula to table to points</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-lit">LIT</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Return to a familiar model: P = $2000, r = 6% p.a. Students calculate Pr = $120 per year. Write I = 120n and A = 2000 + 120n.</li>
+<li>G1: complete the table for n = 0, 1, 2, 3 years. Model plotting only (0, 2000) on the supplied axes. Students plot the remaining points and join them with a straight segment for 0 ≤ n ≤ 3.</li>
+<li>Read the two axis labels before plotting. Ask students to explain what one coordinate means. Do not introduce a separate gradient calculation yet.</li>
+<li>G2: read the amount at n = 2 and explain why the points lie on a straight line. Retain the graph for Lesson 6. The explicit links between rule, table and graph support translation between representations (Ainsworth, 2006).</li>
+</ul>
+<p><strong>Model / board working</strong></p>
+<ul>
+<li>n = 0, 1, 2, 3; A = $2000, $2120, $2240, $2360.</li>
+</ul>
+<blockquote class="kq"><p><strong>Key question:</strong> Why does the amount graph include (0, 2000)?</p>
+<p><strong>Expected:</strong> Before interest has accumulated, the original principal is already $2000.</p>
+</blockquote>
+<blockquote class="kq"><p><strong>Key question:</strong> What does (2, 2240) mean?</p>
+<p><strong>Expected:</strong> After 2 years the total amount is $2240, including $240 interest.</p>
+</blockquote>
+<p><strong>Students</strong></p>
+<ul>
+<li>Complete and plot the table, check with a partner against the stated scale, and label the rule.</li>
+<li>Write “Each extra year adds $120, so the points lie on a straight line.”</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>Provide the same prelabelled grid plus the first point for students who need it. If coordinates are reversed, have the student read “time first, amount second” before plotting the next point.</p>
+</td></tr><tr id="step-review-and-exit-ticket"><td class="seq-phase synthesizing"><span class="seq-name">SYNTHESIZING</span><span class="seq-time">54–60 min</span><span class="seq-step">Review and exit ticket</span><span class="seq-tags"><span class="tag tag-wm">WM</span><span class="tag tag-afl">AfL</span></span></td><td class="seq-body">
+<p><strong>Teacher</strong></p>
+<ul>
+<li>Use 3 minutes to ask students to name the common method: substitute known values, simplify, divide by the multiplier of the unknown, state units and check.</li>
+<li>Use the final 3 minutes for X1: $1000 earns $80 in 2 years. Find the annual rate. X2: for A = 2000 + 120n, state the amount when n = 0 and the increase for each extra year.</li>
+<li>Collect without displaying answers. Explain that the next lesson will use today’s graph to interpret rate of change and investigate different annual rates.</li>
+</ul>
+<p><strong>Students</strong></p>
+<ul>
+<li>Complete the exit ticket independently. Keep the graph and formula card for the next lesson.</li>
+</ul>
+<p><strong>Check / support</strong></p>
+<p>Read X1 working and X2 language separately. Use the result to decide whether Lesson 6 starts with an algebra correction or a graph-label correction.</p>
+<p><strong>After the lesson</strong></p>
+<ul>
+<li>AfL: compare today’s R1 with Lesson 4 evidence, then record U/R/T/A for the inverse questions and G for the graph. Select one short opening correction for Lesson 6.</li>
+<li>Check G1 against labelled axes, correct coordinates and the starting point. Students repair their graph before it is reused, so a plotting error does not become evidence for a false interpretation.</li>
+<li>Record core progress on rate, time, verification and table-to-graph connection. Do not treat an unattempted principal extension as failure of today’s core criteria.</li>
+</ul>
+</td></tr></tbody></table></div><h2 id="worked-solutions">Worked solutions</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th class="nwd">Task / question</th>
+<th>Worked solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nwd">R1–R2</td>
+<td>R1: n = 18/12 = 1.5; I = 500 × 0.06 × 1.5 = $45; A = $545. R2: x = 80/20 = 4; check 20 × 4 = 80.</td>
+</tr>
+<tr>
+<td class="nwd">M1</td>
+<td>150 = 5000 × r × 2 = 10000r. r = 150/10000 = 0.015 = 1.5% p.a. Check: 5000 × 0.015 × 2 = $150.</td>
+</tr>
+<tr>
+<td class="nwd">W1</td>
+<td>72 = 1200 × r × 2 = 2400r. r = 72/2400 = 0.03 = 3% p.a. Check: 1200 × 0.03 × 2 = $72.</td>
+</tr>
+<tr>
+<td class="nwd">M2</td>
+<td>180 = 1200 × 0.05 × n = 60n. n = 180/60 = 3 years. Check: 1200 × 0.05 × 3 = $180.</td>
+</tr>
+<tr>
+<td class="nwd">W2</td>
+<td>60 = 800 × 0.05 × n = 40n. n = 60/40 = 1.5 years = 18 months. Check: 800 × 0.05 × 1.5 = $60.</td>
+</tr>
+<tr>
+<td class="nwd">Y1</td>
+<td>180 = 2000 × r × 3 = 6000r. r = 180/6000 = 0.03 = 3% p.a. Check: 2000 × 0.03 × 3 = $180.</td>
+</tr>
+<tr>
+<td class="nwd">Y2</td>
+<td>150 = 1500 × 0.04 × n = 60n. n = 150/60 = 2.5 years = 30 months. Check: 1500 × 0.04 × 2.5 = $150.</td>
+</tr>
+<tr>
+<td class="nwd">E1</td>
+<td>n = 18/12 = 1.5. 216 = P × 0.06 × 1.5 = 0.09P. P = 216/0.09 = $2400. Check: 2400 × 0.06 × 1.5 = $216.</td>
+</tr>
+<tr>
+<td class="nwd">E2</td>
+<td>I = 2240 − 2000 = $240. 240 = 2000 × r × 2 = 4000r. r = 240/4000 = 0.06 = 6% p.a. Check A = 2000 + 2000 × 0.06 × 2 = $2240.</td>
+</tr>
+<tr>
+<td class="nwd">G1–G2</td>
+<td>Pr = 2000 × 0.06 = $120/year. I = 120n; A = 2000 + 120n. Table and points: <span class="keep">(0, 2000)</span>, <span class="keep">(1, 2120)</span>, <span class="keep">(2, 2240)</span>, <span class="keep">(3, 2360)</span>. G2: at 2 years A = $2240. The increase is always $120 per year, so the points lie on a straight line. The amount begins at $2000, not $0.</td>
+</tr>
+<tr>
+<td class="nwd">Exit X1–X2</td>
+<td>X1: 80 = 1000 × r × 2 = 2000r; r = 80/2000 = 0.04 = 4% p.a. X2: A = $2000 at n = 0; the amount increases by $120 per extra year.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Worked solutions — G1 amount graph</strong></p>
+<p><img id="fig-si-L5-G1-graph" src="assets/img/si-L5-G1-graph.png" alt="Graph of A = 2000 + 120n through (0, 2000), (1, 2120), (2, 2240) and (3, 2360)" /></p>
+<p>G1: (0, 2000), (1, 2120), (2, 2240), (3, 2360). The initial principal is $2000 and the amount increases by $120 for each extra year.</p>
+<h2 id="adjustments-and-anticipated-misconceptions">Adjustments and anticipated misconceptions</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Anticipated misconception</th>
+<th>Why students may think this</th>
+<th>How this lesson addresses it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r = 0.015 is reported as 0.015%.</td>
+<td>Decimal rate and percentage notation may be confused.</td>
+<td>Convert r × 100 to a percentage, then test the stated rate in the original equation.</td>
+</tr>
+<tr>
+<td>The unknown is found by multiplying instead of dividing.</td>
+<td>Students may recall the direct formula without interpreting the substituted equation.</td>
+<td>Keep 150 = 10000r beside a one-step equation. State the inverse operation and show it on both sides.</td>
+</tr>
+<tr>
+<td>A is substituted as I in E2.</td>
+<td>The larger given amount may look like the required formula input.</td>
+<td>Read what was earned, then write I = A − P before solving for r.</td>
+</tr>
+<tr>
+<td>The graph begins at <span class="keep">(0, 0)</span>, or coordinates are reversed.</td>
+<td>Students may transfer the origin of an interest graph to an amount graph or ignore labels.</td>
+<td>Read time first and amount second. Model <span class="keep">(0, 2000)</span> and connect it to the original principal.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Adjustments</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th class="nwd">Students who need…</th>
+<th>Adjustment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nwd">More support</td>
+<td>Provide P/r/n boxes, the units card and completion equations such as 72 = 2400r. Offer r = I/<span class="keep">(Pn)</span> and n = I/<span class="keep">(Pr)</span> on the reference card, but still ask which known quantities belong in the denominator. Give the graph with the first point shown.</td>
+</tr>
+<tr>
+<td class="nwd">More challenge</td>
+<td>Use E1 to find principal and E2 to find interest from total amount before solving. Require back-substitution and an explanation of units. These remain within simple-interest mathematics.</td>
+</tr>
+<tr>
+<td class="nwd">Language / EAL/D</td>
+<td>Read the question aloud, distinguish earns from ends with, and rehearse “I divide both sides by … because …”. Pair each symbol with its meaning and unit <span class="keep">(NESA, 2022b)</span>.</td>
+</tr>
+<tr>
+<td class="nwd">Access and participation</td>
+<td>Provide a large prelabelled grid, ruler and printed model. Students may explain a check orally. If fine-motor plotting is difficult, students identify coordinates and annotate a supplied graph.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="vocabulary">Vocabulary</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th class="nwd">Term</th>
+<th>Definition</th>
+<th>Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="nwd">Unknown quantity</td>
+<td>A value not yet given, such as r or n.</td>
+<td><a href="#fig-si-L5-vocab">Inverse-operation example / amount graph below</a></td>
+</tr>
+<tr>
+<td class="nwd">Substitute</td>
+<td>Replace a symbol with its known value, using compatible units.</td>
+<td><a href="#fig-si-L5-vocab">Inverse-operation example / amount graph below</a></td>
+</tr>
+<tr>
+<td class="nwd">Inverse operation</td>
+<td>An operation that undoes another. Division undoes multiplication.</td>
+<td><a href="#fig-si-L5-vocab">Inverse-operation example / amount graph below</a></td>
+</tr>
+<tr>
+<td class="nwd">Verify</td>
+<td>Substitute the solution into the original rule to check it gives the stated interest.</td>
+<td><a href="#fig-si-L5-vocab">Inverse-operation example / amount graph below</a></td>
+</tr>
+<tr>
+<td class="nwd">Coordinate <span class="keep">(n, A)</span></td>
+<td>An ordered pair giving time first and total amount second.</td>
+<td><a href="#fig-si-L5-vocab">Inverse-operation example / amount graph below</a></td>
+</tr>
+<tr>
+<td class="nwd">Linear relationship</td>
+<td>A relationship with a constant change in amount for equal changes in time. Its graph is a straight line.</td>
+<td><a href="#fig-si-L5-vocab">Inverse-operation example / amount graph below</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><img id="fig-si-L5-vocab" src="assets/img/si-L5-vocab.png" alt="Inverse-operation example: 150 = 10000r, divide both sides by 10000, so r = 0.015 = 1.5% p.a." /></p>
+<p><strong>Vocabulary — coordinates and linear growth</strong></p>
+<p><img src="assets/img/si-L5-G1-graph.png" alt="Amount graph A = 2000 + 120n showing coordinates (time n, total amount A) on a straight line" /></p>
+<p>A coordinate gives time first and total amount second. Equal time intervals have equal amount increases, so these points lie on a straight line. <em>Visual: prepared for these lessons. It connects the words to quantities, units or a mathematical operation.</em></p>
+<h2 id="sources-acknowledged-in-this-lesson">Sources acknowledged in this lesson</h2>
+<p>M1 is adapted from Palmer et al. (2024), Example 18(b), p. 42. The remaining tasks, grid, reference card and diagrams are prepared for this sequence. The printed graph carries forward into Lesson 6.</p>
+<ul>
+<li>Ainsworth, S. (2006). DeFT: A conceptual framework for considering learning with multiple representations. <em>Learning and Instruction, 16</em>(3), 183–198. <a href="https://doi.org/10.1016/j.learninstruc.2006.03.001">https://doi.org/10.1016/j.learninstruc.2006.03.001</a></li>
+<li>Centre for Education Statistics and Evaluation. (2018). <em>Cognitive load theory in practice: Examples for the classroom</em>. NSW Department of Education. <a href="https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/practical-guides-for-educators/cognitive-load-theory-in-practice.html">https://education.nsw.gov.au/about-us/education-data-and-research/cese/publications/practical-guides-for-educators/cognitive-load-theory-in-practice.html</a></li>
+<li>NSW Department of Education. (n.d.). <em>Newman's error analysis</em>. Digital Learning Selector. <a href="https://app.education.nsw.gov.au/digital-learning-selector/LearningActivity/Card/650">https://app.education.nsw.gov.au/digital-learning-selector/LearningActivity/Card/650</a></li>
+<li>NSW Education Standards Authority. (2022a). <em>Mathematics K–10 syllabus</em>. <a href="https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-k-10-2022/content/stage-5/facb3aa952">https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-k-10-2022/content/stage-5/facb3aa952</a></li>
+<li>NSW Education Standards Authority. (2022b). <em>Vocabulary and language in Mathematics 7–10</em> [Support material]. <a href="https://curriculum.nsw.edu.au/file/0e513738-cc88-4ff1-9984-ef0b842faf18/mathematics-7-10-supporting-language-and-vocabulary.docx">https://curriculum.nsw.edu.au/file/0e513738-cc88-4ff1-9984-ef0b842faf18/mathematics-7-10-supporting-language-and-vocabulary.docx</a></li>
+<li>Palmer, S., McDaid, K., Greenwood, D., Woolley, S., Goodman, J., &amp; Vaughan, J. (2024). <em>CambridgeMATHS NSW Stage 5 – Core and Standard Paths Year 10</em> (3rd ed.). Cambridge University Press &amp; Assessment.</li>
+<li>Rosenshine, B. (2012). Principles of instruction: Research-based strategies that all teachers should know. <em>American Educator, 36</em>(1), 12–19, 39. <a href="https://www.aft.org/ae/spring2012/rosenshine">https://www.aft.org/ae/spring2012/rosenshine</a></li>
+</ul>
+
 </main>
 </div>
 <script>

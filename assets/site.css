@@ -124,6 +124,9 @@ td.seq-body p > img[src$=".svg"] { width: 100%; max-width: 640px; border-radius:
 .fig-row > p { flex: 0 1 820px; min-width: 0; margin: 0; }
 .fig-row > p:has(img[src$=".png"]) { flex: 0 0 300px; }
 .fig-row img { width: 100%; }
+/* L4–6 pictures are wide PNG exports from the PDFs: a pair shares the row evenly, a single one stops at 640px */
+p > img[id^="fig-si-"] { width: 100%; max-width: 640px; }
+.fig-row > p:has(img[id^="fig-si-"]) { flex: 1 1 0; }
 .credit { color: var(--muted); font-size: 0.85rem; margin-top: 0; }
 img.wide { display: block; width: 100%; margin: 16px 0 24px; border: 1px solid var(--line); border-radius: 8px; }
 
@@ -276,9 +279,11 @@ main.content h3 + h4:not(.mm-card h4) { margin-top: 12px; }
   .content { margin: 12px 0 24px; padding: 20px 16px 32px; border-radius: 0; border-left: 0; border-right: 0; }
   h1 { font-size: 1.5rem; }
   td img { width: 120px; max-width: 120px; }
+  .table-wrap td, .table-wrap th { padding-left: 7px; padding-right: 7px; }   /* narrower gutters so one long word does not push a 3–4 column table sideways */
   td.nwd, th.nwd { white-space: normal; width: auto; }   /* longer short columns may wrap on a phone */
   .fig-row { flex-direction: column; align-items: stretch; }
   .fig-row > p:has(img[src$=".png"]) { flex-basis: auto; max-width: 300px; }
+  .fig-row > p:has(img[id^="fig-si-"]) { max-width: none; }
   table.seq, table.seq > tbody, table.seq > tbody > tr, table.seq > tbody > tr > td { display: block; width: 100%; }
   table.seq > thead { display: none; }
   .mm-branches { grid-template-columns: 1fr; }
