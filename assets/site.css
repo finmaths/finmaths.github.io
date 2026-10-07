@@ -129,6 +129,7 @@ td.seq-body p > img[src$=".svg"] { width: 100%; max-width: 640px; border-radius:
 p > img[src*="img/si-"] { width: 100%; max-width: 560px; }
 .fig-row > p:has(img[src*="img/si-"]) { flex: 1 1 0; }
 .credit { color: var(--muted); font-size: 0.85rem; margin-top: 0; }
+tr.group-row td { background: #E8EEF5; color: var(--navy); }   /* topic heading row inside a table */
 img.wide { display: block; width: 100%; margin: 16px 0 24px; border: 1px solid var(--line); border-radius: 8px; }
 
 /* phase bars */
