@@ -120,6 +120,9 @@ img { max-width: 100%; height: auto; }
 p > img { display: block; margin: 14px 0 6px; border: 1px solid var(--line); border-radius: 8px; max-width: 100%; }
 p > img[src$=".svg"] { width: 100%; max-width: 820px; }
 td.seq-body p > img[src$=".svg"] { width: 100%; max-width: 640px; border-radius: 8px; }  /* text in the diagram about the size of body text */
+td.seq-body p > img[src*="img/quiz-teacher-"] { width: 100%; max-width: 640px; }   /* Google Forms teacher-view screenshots in Lesson 1 */
+.fig-row:has(img[src*="img/quiz-teacher-"]) { flex-direction: column; align-items: flex-start; gap: 12px; }   /* stacked, not side by side: the option counts must stay readable */
+.fig-row > p:has(img[src*="img/quiz-teacher-"]) { flex: none; width: 100%; max-width: 640px; }
 .fig-row { display: flex; gap: 20px; align-items: center; }
 .fig-row > p { flex: 0 1 820px; min-width: 0; margin: 0; }
 .fig-row > p:has(img[src$=".png"]) { flex: 0 0 300px; }
