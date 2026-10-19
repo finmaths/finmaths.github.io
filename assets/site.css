@@ -449,3 +449,29 @@ figure.sheet figcaption { font-size: 0.88rem; color: var(--muted); margin-top: 6
   iframe.embed-sheet { height: 440px; }
   .viewer-dl { margin-left: 0; }
 }
+
+/* student copy and answer copy side by side, one page at a time */
+figure.viewer.pairs { max-width: none; }
+.viewer-track > .pair { flex: 0 0 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 10px;
+  box-sizing: border-box; scroll-snap-align: start; }
+.pair figure { margin: 0; min-width: 0; }
+.pair figcaption { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+.pair figcaption.ans-label { color: #1F5FBF; }
+.pair img { border: 1px solid var(--line); }
+.viewer-dls { margin-left: auto; display: inline-flex; gap: 14px; flex-wrap: wrap; }
+.viewer-dls .viewer-dl { margin-left: 0; }
+@media (max-width: 860px) {
+  .viewer-track > .pair { grid-template-columns: 1fr; }
+  .viewer-dls { margin-left: 0; }
+}
+
+/* vocabulary at the end of each lesson: a list of terms instead of a table */
+.vocab-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; margin: 6px 0 18px; }
+.vc { display: flex; gap: 12px; align-items: flex-start; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--paper); }
+.vc-text { flex: 1; min-width: 0; }
+.vc-term { font-weight: 700; color: var(--navy); }
+.vc-def { margin-top: 2px; line-height: 1.45; }
+.vc-see { margin-top: 4px; font-size: 0.85rem; }
+.vc-pic { flex: 0 0 120px; }
+.vc-pic p { margin: 0; }
+.vc-pic img { display: block; width: 120px; height: auto; max-height: 110px; object-fit: contain; border-radius: 4px; margin: 0; }
