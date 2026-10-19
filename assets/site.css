@@ -154,9 +154,23 @@ p > img[src*="img/si-"] { width: 100%; max-width: 560px; }
 .cx-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .cx-across .cx-box { border-left-color: var(--teal); }
 .cx-note { font-size: 0.82rem; color: var(--muted); }
-/* unit vocabulary page */
-table.vocab-all td:first-child { font-weight: 600; white-space: nowrap; }
-table.vocab-all td:last-child { white-space: nowrap; }
+/* unit vocabulary page: per lesson, terms on the left and the lesson's pictures on the right */
+section.vb { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 26px; align-items: start; padding: 4px 0 22px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
+section.vb h4 { grid-column: 1 / -1; margin: 6px 0 4px; font-size: 1.02rem; }
+section.vb h4 a { color: var(--navy); text-decoration: none; }
+section.vb h4 a:hover { text-decoration: underline; }
+ul.vb-list { margin: 0; padding-left: 18px; }
+ul.vb-list li { margin: 0 0 7px; line-height: 1.45; }
+ul.vb-list b { margin-right: 4px; }
+.vb-also { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
+.vb-right img.vb-fig { display: block; width: auto; max-width: min(100%, 460px); max-height: 420px; border: 1px solid var(--line); border-radius: 8px; margin: 0 0 10px; background: #fff; }
+.vb-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-bottom: 8px; }
+.vb-photos figure { margin: 0; }
+.vb-photos img { display: block; width: 100%; height: 92px; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); }
+.vb-photos figcaption { font-size: 0.8rem; color: var(--muted); text-align: center; margin-top: 3px; }
+.vb-cred { font-size: 0.78rem; color: var(--muted); margin: 6px 0 2px; }
+.vb-right ul { font-size: 0.76rem; color: var(--muted); margin: 0; padding-left: 16px; overflow-wrap: anywhere; }
+@media (max-width: 1100px) { section.vb { grid-template-columns: 1fr; } }   /* narrow screens: pictures under the terms, full width */
 /* Lesson 1: the Google Forms quiz shown in the page */
 iframe.embed-form { display: block; width: 100%; max-width: 680px; height: 760px; border: 1px solid var(--line); border-radius: 8px; margin: 10px 0 6px; background: #fff; }
 tr.group-row td { background: #E8EEF5; color: var(--navy); }   /* topic heading row inside a table */
@@ -224,6 +238,20 @@ td.seq-phase.synthesizing { background: #ED7D31 !important; }
 .seq-tags .tag { box-shadow: 0 0 0 1.5px #fff; margin: 1px; }
 td.seq-body > :first-child { margin-top: 0; }
 td.seq-body p, td.seq-body li { max-width: none; }
+/* 2026-10-19: on the website each step's phase, time and name sit in a bar across the top of the step
+   instead of a 150px column down the left, so the activities get the full width. (Word/PDF keep the template's
+   two columns; phones already had their own bar, set further down.) */
+table.seq, table.seq > tbody, table.seq > tbody > tr, table.seq > tbody > tr > td { display: block; width: 100%; }
+table.seq > thead { display: none; }
+table.seq > tbody > tr { margin-bottom: 16px; }
+@media (min-width: 861px) {
+  table.seq > tbody > tr > td.seq-phase { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 14px; text-align: left; padding: 8px 14px !important; border-radius: 8px 8px 0 0; }
+  table.seq td.seq-phase .seq-name { display: inline; font-size: 0.74rem; margin: 0; }
+  table.seq td.seq-phase .seq-time { display: inline; margin: 0; font-size: 1.05rem; }
+  table.seq td.seq-phase .seq-step { display: inline; font-size: 0.98rem; font-weight: 600; }
+  table.seq td.seq-phase .seq-tags { display: inline-flex; gap: 4px; margin: 0 0 0 auto; }
+  table.seq > tbody > tr > td.seq-body { border-top: 0; border-radius: 0 0 8px 8px; padding: 12px 18px; }
+}
 
 /* interactive mind map (plan page) */
 .mm { --earn: #1F7A8C; --grow: #6B3FA0; --spend: #C55A11; margin: 10px 0 8px; }
@@ -314,7 +342,7 @@ main.content h3 + h4:not(.mm-card h4) { margin-top: 12px; }
   .cx, .cx-row { grid-template-columns: 1fr; }
   .cx-mid { padding-top: 0; }
   iframe.embed-form { height: 620px; }
-  table.vocab-all td:first-child, table.vocab-all td:last-child { white-space: normal; }
+  section.vb { grid-template-columns: 1fr; }
   .table-wrap td, .table-wrap th { padding-left: 7px; padding-right: 7px; }   /* narrower gutters so one long word does not push a 3–4 column table sideways */
   td.nwd, th.nwd { white-space: normal; width: auto; }   /* longer short columns may wrap on a phone */
   .fig-row { flex-direction: column; align-items: stretch; }
