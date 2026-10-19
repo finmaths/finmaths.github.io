@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lesson 9: Short-term Small Loans: Comparing Borrowing Costs · Financial Mathematics A: Earning, Saving and Spending Money</title>
-<link rel="stylesheet" href="assets/site.css?v=1386e752">
+<link rel="stylesheet" href="assets/site.css?v=9a612608">
 </head>
 <body class="nav-c">
 <header class="site-header">
@@ -78,7 +78,7 @@
 <td><p><b class='role'>Students:</b> Calculate Task 9D by hand, then build formulas and test durations 2, 3 and 4 months. Swap checking/entry roles.<br />
 <span class="tag tag-ict">ICT</span> <span class="tag tag-wm">WM</span>  Predict whether the cheaper offer changes before changing inputs.<br />
 <span class="tag tag-afl">AfL</span>  Teacher checks original-principal fee base and month count.</p>
-<blockquote class="kq"><p><strong>Key question:</strong> Why can the cheaper loan change when the term changes?</p><p><strong>Expected:</strong> L has a larger establishment fee but a smaller monthly fee. M is cheaper at 2 months ($910 versus $912); L at 3 months ($928 versus $940).</p></blockquote></td>
+<blockquote class="kq"><p><strong>Key question:</strong> Why can the cheaper loan change when the term changes?</p><p><strong>Expected:</strong> L has a larger establishment fee but a smaller monthly fee. M is cheaper at 2 months ($910 versus $912); L at 3 months ($928 versus $940).</p></blockquote><figure class="sheet"><iframe class="embed-sheet" src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Ffinmaths.github.io%2Fassets%2Ffiles%2Fspending-teacher-spreadsheet.xlsx" title="Teacher model spreadsheet: the L9 Loans sheet (tabs along the bottom)" loading="lazy"></iframe><figcaption>Teacher model spreadsheet: the L9 Loans sheet (tabs along the bottom) · <a href="assets/files/spending-teacher-spreadsheet.xlsx" download>XLSX download</a></figcaption></figure></td>
 </tr>
 <tr>
 <td class="seq-phase enhancing"><span class="seq-name">ENHANCING</span><span class="seq-time">38–40 min</span><span class="seq-step">Interpretation</span><span class="seq-tags"><span class="tag tag-lit">LIT</span><span class="tag tag-wm">WM</span></span></td>
@@ -162,37 +162,7 @@ Contingency: Shorten the preceding discussion to preserve 15-minute assessment.<
 <p id="completed-teacher-spreadsheet-example"><strong>Completed teacher spreadsheet example</strong></p>
 <p>File: <a href="assets/files/spending-teacher-spreadsheet.xlsx">Spending_Money_Teacher_Spreadsheet.xlsx</a>, L9 Loans. B4 = principal 800; B5 = months 3. Offer L total = B4+B4*10%+B4*2%*B5; offer M total = B4+50+30*B5. Borrowing cost = total minus B4. Outputs at 3 months: L $928 / $128 cost; M $940 / $140 cost. A duration table shows 2 months: $912 versus $910; 3 months: $928 versus $940; 4 months: $944 versus $970. Two earlier payments round to cents and the final payment adjusts to preserve the total.</p>
 <h2 id="adjustments-and-anticipated-misconceptions">Adjustments and anticipated misconceptions</h2>
-<div class="table-wrap"><table>
-
-<thead>
-<tr>
-<th><strong>Barrier / misconception</strong></th>
-<th><strong>Specific support and retained demand</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Uses monthly repayment as percentage base</td>
-<td>Colour-code original principal and circle the fee basis; keep the same comparison.</td>
-</tr>
-<tr>
-<td>Double-counts included fees</td>
-<td>Write total = principal + all charges, then split that total into repayments; do not add charges again.</td>
-</tr>
-<tr>
-<td>Confuses loan cost with total</td>
-<td>Use original / returned / extra labels and require subtraction.</td>
-</tr>
-<tr>
-<td>Language / executive-function needs</td>
-<td>Chunk offer cards; provide calculation rows and read directions aloud without supplying answers. Retain individual reasoning.</td>
-</tr>
-<tr>
-<td>High prior attainment</td>
-<td>Use crossover equation and explain why the whole-month decision differs from the fractional equality.</td>
-</tr>
-</tbody>
-</table></div>
+<div class="mc-cards"><div class="mc"><div class="mc-idea">Uses monthly repayment as percentage base</div><div class="mc-part"><span class="lbl">Specific support and retained demand</span>Colour-code original principal and circle the fee basis; keep the same comparison.</div></div><div class="mc"><div class="mc-idea">Double-counts included fees</div><div class="mc-part"><span class="lbl">Specific support and retained demand</span>Write total = principal + all charges, then split that total into repayments; do not add charges again.</div></div><div class="mc"><div class="mc-idea">Confuses loan cost with total</div><div class="mc-part"><span class="lbl">Specific support and retained demand</span>Use original / returned / extra labels and require subtraction.</div></div><div class="mc"><div class="mc-idea">Language / executive-function needs</div><div class="mc-part"><span class="lbl">Specific support and retained demand</span>Chunk offer cards; provide calculation rows and read directions aloud without supplying answers. Retain individual reasoning.</div></div><div class="mc"><div class="mc-idea">High prior attainment</div><div class="mc-part"><span class="lbl">Specific support and retained demand</span>Use crossover equation and explain why the whole-month decision differs from the fractional equality.</div></div></div>
 <h2 id="vocabulary">Vocabulary</h2>
 <div class="table-wrap"><table>
 
@@ -272,6 +242,29 @@ document.querySelector('.nav-toggle').addEventListener('click', function () {
     try { localStorage.setItem('navCollapsed', closed ? '1' : '0'); } catch (e) {}
   });
 })();
+// slide and page viewers: previous / next buttons, arrow keys, and the "3 / 16" counter
+document.querySelectorAll('.viewer').forEach(function (v) {
+  var track = v.querySelector('.viewer-track'), count = v.querySelector('.viewer-count');
+  if (!count) return;
+  var n = track.children.length;
+  function at() { return Math.min(n - 1, Math.max(0, Math.round(track.scrollLeft / (track.clientWidth || 1)))); }
+  function go(d) { track.scrollTo({ left: (at() + d) * track.clientWidth, behavior: 'smooth' }); }
+  function show() {
+    var i = at();
+    count.textContent = (i + 1) + ' / ' + n;
+    v.querySelector('.prev').disabled = i === 0;
+    v.querySelector('.next').disabled = i === n - 1;
+  }
+  v.querySelector('.prev').addEventListener('click', function () { go(-1); });
+  v.querySelector('.next').addEventListener('click', function () { go(1); });
+  track.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { go(1); e.preventDefault(); }
+    if (e.key === 'ArrowLeft') { go(-1); e.preventDefault(); }
+  });
+  track.addEventListener('scroll', function () { window.requestAnimationFrame(show); });
+  window.addEventListener('load', show);
+  show();
+});
 </script>
 </body>
 </html>

@@ -406,3 +406,46 @@ h3.part { padding-left: 10px; border-left: 5px solid currentColor; }
 .tm strong { display: block; color: var(--c); font-size: 1.02rem; }
 .tm span { color: var(--ink); font-size: 0.9rem; }
 .team-note { color: var(--muted); font-size: 0.88rem; margin: 6px 0 20px; }
+
+/* ---------- lesson materials: slides and printed pages shown on the page ---------- */
+figure.viewer { margin: 14px 0 22px; max-width: 900px; }
+figure.viewer.pages { max-width: 660px; }
+.viewer-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; border: 1px solid var(--line);
+  border-radius: 8px; background: #fff; scrollbar-width: none; }
+.viewer-track::-webkit-scrollbar { display: none; }
+.viewer-track img { flex: 0 0 100%; width: 100%; max-width: none; height: auto; margin: 0; scroll-snap-align: start; display: block; }
+.viewer-track:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+.viewer figcaption { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: 8px; font-size: 0.92rem; color: var(--ink); }
+.viewer-title { font-weight: 700; }
+.viewer-nav { display: inline-flex; align-items: center; gap: 8px; }
+.viewer-nav button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--paper);
+  color: var(--navy); font-size: 1.3rem; line-height: 1; cursor: pointer; }
+.viewer-nav button:hover:not(:disabled) { background: var(--wash); }
+.viewer-nav button:disabled { opacity: 0.35; cursor: default; }
+.viewer-count { min-width: 3.6em; text-align: center; font-variant-numeric: tabular-nums; color: var(--muted); }
+.viewer-dl { margin-left: auto; font-size: 0.85rem; }
+td figure.viewer { margin: 14px 0 6px; }
+
+/* spreadsheets in Microsoft's Office viewer */
+figure.sheet { margin: 14px 0 6px; }
+iframe.embed-sheet { display: block; width: 100%; height: 520px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+figure.sheet figcaption { font-size: 0.88rem; color: var(--muted); margin-top: 6px; }
+
+/* misconceptions, adjustments and worked solutions as cards instead of wide tables */
+.cards-label { font-weight: 700; color: var(--navy); margin: 18px 0 8px; font-size: 1.02rem; }
+.mc-cards, .adj-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; margin: 0 0 18px; }
+.mc, .adj { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: var(--paper); }
+.mc { border-top: 4px solid var(--red); }
+.adj { border-top: 4px solid var(--teal); }
+.mc-idea { font-weight: 700; color: var(--ink); margin-bottom: 8px; line-height: 1.4; }
+.mc-part { margin-top: 8px; line-height: 1.5; }
+.mc-part .lbl { display: block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+.adj-who { font-weight: 700; color: var(--teal); margin-bottom: 6px; }
+.ws-list { margin: 0 0 18px; border-top: 1px solid var(--line); }
+.ws { display: grid; grid-template-columns: minmax(150px, 0.32fr) 1fr; gap: 4px 18px; padding: 10px 2px; border-bottom: 1px solid var(--line); }
+.ws-q { font-weight: 700; color: var(--navy); }
+@media (max-width: 860px) {
+  .ws { grid-template-columns: 1fr; }
+  iframe.embed-sheet { height: 440px; }
+  .viewer-dl { margin-left: 0; }
+}
