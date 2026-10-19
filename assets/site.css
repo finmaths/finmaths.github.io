@@ -137,6 +137,23 @@ p > img[src*="img/si-"] { width: 100%; max-width: 560px; }
 .page-toc span { color: var(--muted); font-weight: 600; margin-right: 4px; }
 .page-toc a { text-decoration: none; color: var(--navy); background: #EEF2F7; border: 1px solid #D5DCE4; border-radius: 14px; padding: 3px 11px; }
 .page-toc a:hover { background: #E1E8F1; }
+/* Plan page: how the unit connects to the rest of the syllabus */
+.cx { display: grid; grid-template-columns: 1fr 0.9fr 1fr; gap: 18px; align-items: start; margin: 14px 0 10px; }
+.cx-col { display: flex; flex-direction: column; gap: 10px; }
+.cx-head { margin: 0 0 2px; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.cx-box { background: #fff; border: 1px solid #D5DCE4; border-left: 4px solid var(--navy); border-radius: 8px; padding: 8px 11px; font-size: 0.88rem; line-height: 1.4; }
+.cx-box b, .cx-centre b { display: block; color: var(--navy); }
+.cx-code { display: inline-block; margin: 2px 0 3px; font-size: 0.76rem; font-weight: 700; color: #fff; background: var(--navy); border-radius: 4px; padding: 1px 6px; }
+.cx-use { display: block; color: var(--ink); }
+.cx-mid { padding-top: 22px; }
+.cx-centre { background: var(--navy); color: #fff; border-radius: 10px; padding: 12px 14px; text-align: center; font-size: 0.9rem; line-height: 1.4; }
+.cx-centre b { color: #fff; font-size: 1rem; }
+.cx-centre .cx-code { background: #fff; color: var(--navy); margin: 4px 0; }
+.cx-centre span:last-child { display: block; }
+.cx-across { margin: 8px 0 6px; }
+.cx-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.cx-across .cx-box { border-left-color: var(--teal); }
+.cx-note { font-size: 0.82rem; color: var(--muted); }
 /* unit vocabulary page */
 table.vocab-all td:first-child { font-weight: 600; white-space: nowrap; }
 table.vocab-all td:last-child { white-space: nowrap; }
@@ -294,6 +311,8 @@ main.content h3 + h4:not(.mm-card h4) { margin-top: 12px; }
   .content { margin: 12px 0 24px; padding: 20px 16px 32px; border-radius: 0; border-left: 0; border-right: 0; }
   h1 { font-size: 1.5rem; }
   td img { width: 120px; max-width: 120px; }
+  .cx, .cx-row { grid-template-columns: 1fr; }
+  .cx-mid { padding-top: 0; }
   iframe.embed-form { height: 620px; }
   table.vocab-all td:first-child, table.vocab-all td:last-child { white-space: normal; }
   .table-wrap td, .table-wrap th { padding-left: 7px; padding-right: 7px; }   /* narrower gutters so one long word does not push a 3–4 column table sideways */
