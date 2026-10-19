@@ -475,3 +475,18 @@ figure.viewer.pairs { max-width: none; }
 .vc-pic { flex: 0 0 120px; }
 .vc-pic p { margin: 0; }
 .vc-pic img { display: block; width: 120px; height: auto; max-height: 110px; object-fit: contain; border-radius: 4px; margin: 0; }
+
+/* Lesson 1 diagnostic quiz: one card per question instead of a table */
+.quiz-cards { margin: 6px 0 14px; }
+.qz-topic { margin: 14px 0 6px; font-size: 0.95rem; }
+.qz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.qz { border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--paper); }
+.qz-q { font-weight: 600; line-height: 1.4; }
+.qz-n { display: inline-block; min-width: 1.55em; height: 1.55em; line-height: 1.55em; border-radius: 50%; background: var(--navy);
+  color: #fff; text-align: center; font-size: 0.78rem; margin-right: 7px; vertical-align: 1px; }
+.qz-right { margin-top: 6px; color: #1E7B34; font-weight: 700; }
+.qz-right::before { content: "✓ "; }
+.qz-wrong { list-style: none; margin: 6px 0 0; padding: 0; font-size: 0.92rem; line-height: 1.4; }
+.qz-wrong li { margin-top: 3px; }
+.qz-wrong b { color: var(--red); margin-right: 6px; }
+.qz-wrong b::before { content: "✗ "; }
