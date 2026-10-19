@@ -132,6 +132,16 @@ td.seq-body p > img[src*="img/quiz-teacher-"] { width: 100%; max-width: 640px; }
 p > img[src*="img/si-"] { width: 100%; max-width: 560px; }
 .fig-row > p:has(img[src*="img/si-"]) { flex: 1 1 0; }
 .credit { color: var(--muted); font-size: 0.85rem; margin-top: 0; }
+/* "On this page" links under each lesson header */
+.page-toc { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 18px 0 6px; font-size: 0.88rem; }
+.page-toc span { color: var(--muted); font-weight: 600; margin-right: 4px; }
+.page-toc a { text-decoration: none; color: var(--navy); background: #EEF2F7; border: 1px solid #D5DCE4; border-radius: 14px; padding: 3px 11px; }
+.page-toc a:hover { background: #E1E8F1; }
+/* unit vocabulary page */
+table.vocab-all td:first-child { font-weight: 600; white-space: nowrap; }
+table.vocab-all td:last-child { white-space: nowrap; }
+/* Lesson 1: the Google Forms quiz shown in the page */
+iframe.embed-form { display: block; width: 100%; max-width: 680px; height: 760px; border: 1px solid var(--line); border-radius: 8px; margin: 10px 0 6px; background: #fff; }
 tr.group-row td { background: #E8EEF5; color: var(--navy); }   /* topic heading row inside a table */
 img.wide { display: block; width: 100%; margin: 16px 0 24px; border: 1px solid var(--line); border-radius: 8px; }
 
@@ -284,6 +294,8 @@ main.content h3 + h4:not(.mm-card h4) { margin-top: 12px; }
   .content { margin: 12px 0 24px; padding: 20px 16px 32px; border-radius: 0; border-left: 0; border-right: 0; }
   h1 { font-size: 1.5rem; }
   td img { width: 120px; max-width: 120px; }
+  iframe.embed-form { height: 620px; }
+  table.vocab-all td:first-child, table.vocab-all td:last-child { white-space: normal; }
   .table-wrap td, .table-wrap th { padding-left: 7px; padding-right: 7px; }   /* narrower gutters so one long word does not push a 3–4 column table sideways */
   td.nwd, th.nwd { white-space: normal; width: auto; }   /* longer short columns may wrap on a phone */
   .fig-row { flex-direction: column; align-items: stretch; }
