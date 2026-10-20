@@ -490,3 +490,30 @@ figure.viewer.pairs { max-width: none; }
 .qz-wrong li { margin-top: 3px; }
 .qz-wrong b { color: var(--red); margin-right: 6px; }
 .qz-wrong b::before { content: "✗ "; }
+
+/* top of each lesson: sections and dot points instead of a bordered grid (after the 2024 exemplar site) */
+.lp-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 14px 28px; margin: 14px 0 22px; align-items: start; }
+.lp-top .page-toc { display: block; margin: 0; font-size: 0.92rem; }
+.lp-top .page-toc ul { list-style: none; margin: 4px 0 0; padding: 0; }
+.lp-top .page-toc li { margin: 3px 0; }
+.lp-top .page-toc a { background: none; border: 0; padding: 0; color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+.lp-top .lp-key { margin: 0; }
+.lp-h { color: var(--navy); font-size: 1.02rem; font-weight: 700; margin: 0 0 6px; }
+.lp-intro { margin: 0 0 8px; }
+.lp-meta { display: flex; flex-wrap: wrap; gap: 6px 28px; margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.lp-meta b { color: var(--navy); }
+.lp-sec { margin: 0 0 18px; }
+.lp-sec p, .lp-sec li { max-width: none; }
+.lp-sec ul, .lp-sec ol { margin: 4px 0 6px; padding-left: 22px; }
+.lp-sec p { margin: 2px 0 6px; }
+.lp-goal { background: #F3EFF9; border-left: 4px solid var(--purple); border-radius: 0 8px 8px 0; padding: 12px 16px; }
+.lp-goal .lp-h + p, .lp-goal p + .lp-h { margin-top: 0; }
+.lp-goal .lp-h:not(:first-child) { margin-top: 12px; }
+.lp-goal strong, .lp-goal b, b.verb { color: var(--purple); }
+.lp-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 32px; }
+@media (max-width: 860px) {
+  .lp-top, .lp-pair { grid-template-columns: 1fr; }
+}
+.lp-key ul { list-style: none; margin: 0; padding: 0; }
+.lp-key ul.key-tags { display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); gap: 4px 18px; margin-bottom: 8px; }
+.lp-key ul.key-more li { margin: 3px 0; }
